@@ -6,14 +6,17 @@
     "axios": "^0.19.0",
     "body-parser": "^1.19.0",
     "express": "^4.17.1",
+    "html": "^1.0.0",
     "http-proxy-middleware": "^0.19.1",
+    "pm2": "^3.5.1",
     "react": "^16.8.6",
     "react-dom": "^16.8.6",
     "react-router-dom": "^5.0.1",
     "react-scripts": "3.0.1"
   },
   "scripts": {
-    "start": "npm-run-all --parallel start:**",
+    "start": "node ./server/app.js",
+    "start_old": "npm-run-all --parallel start:**",
     "start:client": "react-scripts start",
     "start:server": "node ./server/app.js",
     "build": "react-scripts build",
